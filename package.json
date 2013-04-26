@@ -1,0 +1,17 @@
+{
+  "author": "Thom Blake <thethomblake@gmail.com> (http://thomblake.me)",
+  "name": "thomblake",
+  "description": "Web server for thomblake.me",
+  "version": "0.0.0",
+  "homepage": "https://github.com/thomblake/thomblake",
+  "repository": {
+    "url": "https://github.com/thomblake/thomblake"
+  },
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
