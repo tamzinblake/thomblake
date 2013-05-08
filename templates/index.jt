@@ -1,0 +1,26 @@
+$(IMPORT (header))
+$(IMPORT (footer))
+$(WRAP header()
+$)
+<div id="wrapper">
+  <div id="header">
+    <div id="pre_logo">
+    </div>
+    <div id="logo">
+      <a href="/blog"><h1>Thom Blake - Web development and computer ethics</h1></a>
+    </div>
+    <div id="post_logo">
+      <a href="/">Home</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/resume">Resume</a>
+    </div>
+  </div>
+  <div id="body">
+    <div id="content">
+        $this.content
+    </div>
+  </div>
+  <div id="footer">
+    &copy; 2007-${ (new Date()).getFullYear() } Thom Blake
+  </div>
+  <div class="clearing">&nbsp;</div>
+</div>
+${ footer() }
