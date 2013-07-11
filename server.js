@@ -5,6 +5,7 @@ var express = require('express')
   , fs = require('fs')
   , path = require('path')
   , contentRoot = path.resolve(__dirname ,'content/')
+  , https = require('https')
 
 var app = express()
   , required = {}
@@ -16,6 +17,31 @@ app.use(express.static(__dirname + '/htdocs' ,{ maxAge: oneYear }));
 app.get('/' ,function (req ,res) {
   var content = readFile('index.md')
   processIndex(content ,res)
+})
+
+app.get('/v1.1/:route' ,function (req ,res) {
+  var options = { hostname: 'api.getclever.com'
+                , path: '/v1.1/' + req.params.route
+                , auth: 'DEMO_KEY'
+                }
+
+  var callback = function (clever_response) {
+    var data = ''
+    clever_response.on('data' ,function (chunk) {
+      data += chunk
+    })
+    clever_response.on('end' ,function () {
+      var rv = data
+      try {
+        rv = JSON.parse(data)
+      }
+      catch (er) {
+      }
+      res.send(rv)
+    })
+  }
+
+  https.get(options ,callback)
 })
 
 app.get('/:route' ,function (req ,res) {
@@ -42,4 +68,3 @@ var processIndex = function (content ,res) {
 }
 
 app.listen(80)
-
