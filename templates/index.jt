@@ -7,7 +7,7 @@ $)
     <div id="pre_logo">
     </div>
     <div id="logo">
-      <a href="/blog"><h1>Thom Blake - Web development and computer ethics</h1></a>
+      <a href="/blog"><h1>Tamzin Blake - Web development and computer ethics</h1></a>
     </div>
     <div id="post_logo">
       <a href="/">Home</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/resume">Resume</a>
@@ -19,7 +19,7 @@ $)
     </div>
   </div>
   <div id="footer">
-    &copy; 2007-${ (new Date()).getFullYear() } Thom Blake
+    &copy; 2007-${ (new Date()).getFullYear() } Tamzin Blake
   </div>
   <div class="clearing">&nbsp;</div>
 </div>

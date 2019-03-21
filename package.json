@@ -1,11 +1,11 @@
 {
-  "author": "Thom Blake <thethomblake@gmail.com> (http://thomblake.me)",
+  "author": "Tamzin Blake <tamzinblake@gmail.com> (http://tamzinblake.com)",
   "name": "thomblake",
   "description": "Web server for thomblake.me",
   "version": "0.0.0",
-  "homepage": "https://github.com/thomblake/thomblake",
+  "homepage": "https://github.com/tamzinblake/thomblake",
   "repository": {
-    "url": "https://github.com/thomblake/thomblake"
+    "url": "https://github.com/tamzinblake/thomblake"
   },
   "main": "server.js",
   "dependencies": {

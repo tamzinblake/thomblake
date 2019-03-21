@@ -61,8 +61,8 @@ var readFile = function (filename) {
 
 var processIndex = function (content ,res) {
   res.send(template.process( 'index'
-                           , { title:  'Thom Blake'
-                             , content: md(content ,'thomblake/thomblake')
+                           , { title:  'Tamzin Blake'
+                             , content: md(content ,'tamzinblake/thomblake')
                              }
                            ))
 }
