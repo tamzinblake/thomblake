@@ -66,7 +66,7 @@ $(function () {
     .attr('height' ,function(d) { return height - y(d.data.students.length) })
   }
 
-  $.ajax( 'http://thomblake.me/v1.1/sections'
+  $.ajax( 'http://tamzinblake.com/v1.1/sections'
         , { success: visualize }
         )
 })
